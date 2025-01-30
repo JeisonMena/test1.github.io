@@ -1,0 +1,165 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    /* Establece la fuente para toda la página */
+    margin: 0;
+    /* Elimina el margen por defecto de todo el cuerpo de la página */
+    padding: 0;
+    /* Elimina el relleno por defecto de todo el cuerpo de la página */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    /* Color de fondo del encabezado */
+    color: white;
+    /* Color del texto en el encabezado */
+    text-align: center;
+    /* Alinea el texto al centro en el encabezado */
+    padding-top: 10px;
+    /* Añade relleno arriba del encabezado */
+    padding-bottom: 10px;
+    /* Añade relleno abajo del encabezado */
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #444;
+    /* Color de fondo de la barra de navegación */
+    color: white;
+    /* Color del texto en la barra de navegación */
+    padding: 10px;
+    /* Añade relleno alrededor de los elementos de navegación */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Elimina los marcadores de lista predeterminados */
+    margin: 0;
+    /* Elimina el margen por defecto de la lista */
+    padding: 0;
+    /* Elimina el relleno por defecto de la lista */
+}
+
+nav ul li {
+    display: inline;
+    /* Muestra los elementos de la lista en línea */
+    margin-right: 10px;
+    /* Añade un margen a la derecha de cada elemento de la lista */
+}
+
+/* Estilos del área de contenido y la barra lateral */
+.container {
+    display: flex;
+    /* Usa Flexbox para un diseño flexible del contenedor */
+    margin-top: 20px;
+    /* Añade un margen en la parte superior del contenedor */
+}
+
+.content {
+    flex: 3;
+    /* Asigna 3 partes del espacio disponible al contenido principal */
+    padding: 20px;
+    /* Añade relleno alrededor del contenido principal */
+}
+
+.sidebar {
+    flex: 1;
+    /* Asigna 1 parte del espacio disponible a la barra lateral */
+    background-color: #f4f4f4;
+    /* Color de fondo de la barra lateral */
+    padding: 20px;
+    /* Añade relleno alrededor del contenido de la barra lateral */
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    /* Color de fondo del pie de página */
+    color: white;
+    /* Color del texto en el pie de página */
+    text-align: center;
+    /* Alinea el texto al centro en el pie de página */
+    padding: 10px 0;
+    /* Añade relleno arriba y abajo del pie de página */
+    width: 100%;
+    /* El pie de página se extiende a lo ancho de la ventana */
+}
+
+.botones_flotantes {
+    background-color: #000000eb;
+    /* Color de fondo del pie de página */
+    color: white;
+    /* Color del texto en el pie de página */
+    text-align: center;
+    /* Alinea el texto al centro en el pie de página */
+    padding: 10px 0;
+    /* Añade relleno arriba y abajo del pie de página */
+    position: fixed;
+    /* Fija el pie de página en la parte inferior */
+    bottom: 0;
+    /* Posiciona el pie de página en la parte inferior de la ventana */
+    width: 100%;
+    /* El pie de página se extiende a lo ancho de la ventana */
+    display: none;
+}
+
+.contenedor_botones {
+    display: flex;
+    /* Establece el contenedor como un flex container */
+    justify-content: space-around;
+    /* Distribuye el espacio alrededor de los elementos */
+    align-items: center;
+    /* Alinea los elementos verticalmente */
+    width: 100%;
+    /* El contenedor toma todo el ancho disponible */
+}
+
+.contenedor_botones a {
+    flex-grow: 1;
+    /* Los elementos crecen para ocupar el espacio disponible */
+    text-align: center;
+    /* Centra el contenido de cada elemento */
+    margin: 5px;
+    /* Opcional: Añade un pequeño margen entre elementos */
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+
+
+
+    .botones_flotantes {
+        display: block;
+    }
+
+
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        margin-bottom: 70px;
+    }
+
+    .container {
+        display: unset;
+    }
+
+}
